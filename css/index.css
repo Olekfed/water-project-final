@@ -1,0 +1,378 @@
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+    :root {
+        font-family: 'Open Sans', sans-serif;
+        --main-color: black;
+        --accent-color: rgb(50, 206, 211);
+        scroll-behavior: smooth;
+    }
+    h1 {
+        color:  white;
+        text-align: center;
+        font-family: monospace; 
+        font-size: 46px;
+        font-style: italic;  
+        padding-top: 100px;
+    }
+    h2, h3, h4 {
+        font-family: 'Open Sans', serif;
+        font-weight: bold;
+    }
+    body {
+        max-width: 1300px;
+        margin: auto;
+        width: 100%;
+    }    
+    .menu {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        background-color: rgb(227, 255, 127);
+        margin-top: 20px;
+    }
+    .banner {
+        font-size: 30px;
+        color: solid black;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: auto;
+        font-style: italic;
+        background-color: rgba(255, 189, 127, 0.856);  
+    } 
+    @media (min-width: 320px) {
+        header nav {
+                display: flex;
+                }    
+    @media (max-width: 320px) {
+        .menu {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);                    
+                }
+            }
+    nav a {
+    text-decoration: none;
+        }   
+
+    #brand {
+        background-image: url(../img/soft-water.jpg);
+        background-size: cover;
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .brand-name {
+        font-size: 36px;
+        font-style: italic;  
+        color:coral;
+        float:right; 
+        width: 300px;
+    }
+    /* Ти заслуговуєш на найkpащу воду*/
+    .form-blok {
+        padding-top: 20px;
+        padding-left: 30px; 
+        font-size: 24px;
+    }
+    /*кнопка*/
+    .forma-button {
+        /*margin-left: 250px;
+        margin-bottom: 500px;*/
+        font-size: 24px;
+        border-radius: 2rem;
+        padding: auto;
+        margin: auto; 
+        background-color:rgb(0, 124, 128);
+        transition: 0.7s;  
+        color: blue;
+        text-align: center;
+        margin-top: 20px;
+
+    } /* ячейки форми заповенння*/
+    .forma {
+        text-align: center;
+        font-size: 24px;
+        padding-left: 100px;
+        padding-top: 10px;  
+      
+
+    }
+    /* батьківський для form-block i forma*/
+    .delivery-form {
+        height: 600px;
+        width: 500px;
+        padding: auto;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.459); 
+        border-radius: 2rem;
+        line-height: 50px;
+        padding-bottom: 60px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 200px) {
+        .delivery-form, #brand {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+                }
+    } 
+          /* Досвід, Свіжа, Перевірена якість (батьківський) */
+    #foundation {
+        font-size: 24px;
+        font-family: Arial;
+        text-align: center;
+        display: flex;
+        flex: wrap; 
+    }
+    @media (max-width: 650px) {
+        #foundation {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+                }
+    }
+    /* Досвід, Свіжа, Перевірена якість - фото*/
+    .quality img {
+        padding: 50px;
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+    .quality {
+        text-align: center;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    /* Обери потрібне (батьківській) */
+    #delivery {
+        background-image: url(../img/logistic.jpg);
+        background-size: cover;
+        height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 700;   
+        font-size: 36px;
+
+    }
+    .for-home {
+        color: rgb(255, 145, 0);
+        flex: 1;
+        width: 400px;
+        align-self: center;
+        padding-left: 50px;
+        padding-bottom: 210px;
+        font-size: 20px;
+
+    }
+    .for-office {
+        color: rgb(43, 255, 0);
+        flex: 1;
+        align-self: center;
+        width: 400px; 
+        padding-right: 50px;   
+        font-size: 20px;
+    }
+/* Заголовок Обери потрібне (h2) */
+    .choise {
+        color: rgb(229, 255, 0);
+        text-align: center;
+        padding-bottom: 180px;
+        font-size: 30px;
+        font-weight: 700; 
+        font-style: italic;  
+
+    }
+    @media (max-width: 900px) {
+        .for-home, .for-office  {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        }
+    }
+    #products {
+        display: flex;
+        font-size: 20px;
+        padding: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+    @media (max-width: 650px) {
+        #products {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+                }
+    }
+    /* Лемон-заголовок */
+    .product-lemon {
+        text-align: center;
+        font-size: 26px;
+    }
+    .product-lemon img {
+        width: 100%;
+    }
+    /* 4 фото бутильована вода.... ваш власний бренд */
+    .product-card img {
+        display: flex;
+        padding: 60px;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+    }
+    /* Про нас фото */
+    #about-us img {
+        width: 100%;  
+    }
+    .firm-history {
+        font-size: 24px;
+        font-family: Arial;
+    }
+    /* магазини партнери фото */
+    #partners img {
+        width: 250px;
+        font-size: 20px;
+        font-family: italic;
+    }
+    #partners {
+        font-size: 24px;
+        font-family: italic;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 20px;
+    } 
+    @media (max-width: 650px) {
+        #partners {
+        display: grid;
+        grid-template-columns: repeat(1, 5fr);
+                }
+    }
+    /* Карта на фоні логістики */
+    #contacts {
+        background-image: url(../img/underwater.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;  
+        font-size: 24px;
+        font-weight: 700;
+    }
+    /* Задоволені партнери фото */
+    .garantie img {
+        width: 180px;
+        height: 200px;
+        align-items:center;
+    }
+    .garantie {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 700;
+        text-align: center;
+    }
+    .garatie-place, .contacts-place {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        padding-top: 20px;
+     
+    }
+    @media (max-width: 650px) {
+        #carousel1 img, #carousel2 img {
+            display: grid;
+            grid-template-columns: repeat(1, 5fr);
+        }
+    }
+    .garatie-part {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacts-place {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    /* Ми тут і ЧК -шапки */
+    #folowers {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10%;
+    }
+    .general {
+        display: flex;
+        flex-wrap: wrap;
+        float:left;
+        width: 250px;
+        padding-top: 20px;        
+    }
+    /* Табличка в кінці */
+    .label-end {
+    text-align: center;
+    background-color:green;
+    line-height: 30px;
+    height: 550px;
+    width: 100%;
+    padding-top: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+    .label-end-cont {
+        font-size: 30px;
+        align-items: center;
+        border-radius: 1.5rem;  
+    }
+        /* Табличка в кінці кнопка*/
+    .label-end-btn {
+        border-radius: 2rem;
+        font-size: 24px;
+        background-color: rgb(225, 130, 238);
+        transition: 0.7s;  
+        color: rgb(0, 60, 255);
+    }
+    .forma-button:hover, .label-end-btn:hover {
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .logos {
+    padding-top: 20px;        
+    }
+/* Карусель JS */
+    .carousel1, .carousel2 {
+    text-align: center;
+    }
+    .next, .prev {
+    background-color: greenyellow;
+    border-radius: 2rem;
+    align-content: center;
+    text-align: center;
+    font-style: italic;  
+    text-transform: lowercase;
+    font-size: 24px;
+    }
+/* Годинник JS */
+.clock {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic; 
+    color: rgb(255, 47, 47); 
+}
+/* Відлік розпродажу JS*/ 
+#sale, #countdown-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    color: green;
+}
+#countdown {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.time {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-style: italic; 
+}

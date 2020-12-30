@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\icons"
+		},
+		{
+			"path": "..\\img"
+		},
+		{
+			"path": "..\\js"
+		},
+		{
+			"path": "..\\.git"
+		},
+		{
+			"path": "..\\.theia"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "img"
+	}
+}
